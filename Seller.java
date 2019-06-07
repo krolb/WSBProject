@@ -1,5 +1,6 @@
 public class Seller extends Employee {
-private int supplement;     //Dodatek
+ private int supplement;     //Dodatek
+ static private int counters;    //Statyczny licznik obiektów tego typu
 
 
     Seller(){   //kKonstruktor bezparametrowy
@@ -19,6 +20,10 @@ private int supplement;     //Dodatek
 
     public int getSupplement() {        //Gettet dodatku
         return supplement;
+    }
+
+    public int getCounterS() {       //Getter licznika obiektóe tego typu
+        return counters;
     }
 
     @Override

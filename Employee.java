@@ -1,6 +1,7 @@
 public class Employee extends Personel {
     private int rate;       //Stawka godzinowa
     private int hours;      //Przepracowane godziny
+    static private int countere;    //Statyczny licznik obiektów danego typu
 
     Employee(){     //Konstruktor bezparametrowy
      super();
@@ -12,6 +13,7 @@ public class Employee extends Personel {
         super(name, office);
         this.rate = rate;
         this.hours = hours;
+        this.countere++;
     }
 
 
@@ -31,6 +33,10 @@ public class Employee extends Personel {
 
     public int getHours() {     //Getter przeprzcowanych godzin
         return hours;
+    }
+
+    public int getCounterE() {   //Getter licznika obiektów tego typu
+        return countere;
     }
 
     public int countSalary(){

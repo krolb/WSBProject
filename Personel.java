@@ -1,6 +1,7 @@
 public class Personel {
     private String name;
     private int office;
+    static private int counter;     //Statyczny licznik wszystkich obiektów w bazie
 
     Personel(){
         this.name="Janusz";
@@ -12,22 +13,26 @@ public class Personel {
         this.office = office;
     }
 
-    public Personel setName(String name) {
+    public Personel setName(String name) { //Seter naszwy
         this.name = name;
         return this;
     }
 
-    public Personel setOffice(int office) {
+    public Personel setOffice(int office) {    //Setter biura
         this.office = office;
         return this;
     }
 
-    public String getName() {
+    public String getName() {   //Getter nazwy
         return name;
     }
 
-    public int getOffice() {
+    public int getOffice() {    //Getter biura
         return office;
+    }
+
+    public static int getCounter() {    //Getter licznika wszystkich obiektów znajdujących się w bazie
+        return counter;
     }
 
     public String getNumber(){
