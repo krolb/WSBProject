@@ -1,30 +1,15 @@
+import java.util.Scanner;
+
 public class Main {
 //@autor Bartosz Król
     // Plik gówny main w którym będzie wykonwany słaściwy program korzystający z klas znajdujących się w innych plikach
     public static void main(String[] args) {
 
 
+        System.out.println("Witaj w programie do zarządzania kadrą pracowniczą");
 
-        int i= 10;
-        String ii;
+        Scanner in = new Scanner(System.in);
+        in.nextLine();
 
-        Personel per = new Personel();
-        per.setOffice(001);
-        per.getNumber();
-
-//        Employee emp = new Employee();
-//        System.out.println(emp.getHours());
-//        emp.setHours(160);
-//        emp.setRate(14);
-//        System.out.println(emp.countSalary());
-//        Seller sel = new Seller();
-//        sel.setOffice(10);
-//
-//        System.out.println(sel.getNumber());
-
-        Director dir = new Director();
-        System.out.println(dir.countSalary());
-        System.out.println(dir.getBonus());
-        System.out.println(dir.getSalary());
     }
 }
