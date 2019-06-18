@@ -29,17 +29,17 @@ public class Employee extends Personel {
 
     public int getRate() {      //Getter stawki godzinowej
         return rate;
-    }
+    }       //Getter stawki godzinowej
 
     public int getHours() {     //Getter przeprzcowanych godzin
         return hours;
-    }
+    }       //Getter przepracowanych godzin
 
     public int getCounterE() {   //Getter licznika obiektów tego typu
         return countere;
-    }
+    }       //Getter licznika
 
-    public int countSalary(){
+    public int countSalary(){       //Publiczna metoda obliczania wypłaty
         int result=this.hours*this.rate;
         return result;
     }

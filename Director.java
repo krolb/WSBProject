@@ -1,6 +1,7 @@
+//Klasa Director dziedzicząca po klasie perdsonel
 public class Director extends Personel {
- private int salary;         //Stała stawka
- private int bonus;          //Premia
+ private int salary;         //Prywatna zmienna typu int przechowująca stałą stawkę
+ private int bonus;          //Prywatna zmienna typu int przechowująca premia
  static  private int counterd;        //Statyczny licznik obiektów tego typu
 
     Director(){     //Konstruktor bezparametrowy
@@ -29,15 +30,15 @@ public class Director extends Personel {
 
     public int getSalary() {    //Getter stawki
         return salary;
-    }
+    }       //Getter stalej stawki
 
     public int getBonus() {     //Getter premii
         return bonus;
-    }
+    }       //Getter premii
 
     public int getCounterd() {   //Getter licznika obiektów tego typu
         return this.counterd;
-    }
+    }   //Getter licznika obiektów tego typu
 
     public int countSalary(){   //Publiczna funkcja obliczająca wypłate dyrektora
         int result;

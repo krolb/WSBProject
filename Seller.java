@@ -1,9 +1,10 @@
+//Klasa Seller dziedzicząca po klasie Employee która dziedziczy po klasie Personel
 public class Seller extends Employee {
- private int supplement;     //Dodatek
- static private int counters;    //Statyczny licznik obiektów tego typu
+ private int supplement;     //Prywatna zmienna typu inr przechowyująca Dodatek
+ static private int counters;    //Statyczna prywatna zmienna typu int przechowująca licznik obiektów tego typu
 
 
-    Seller(){   //kKonstruktor bezparametrowy
+    Seller(){   //Konstruktor bezparametrowy
         super();
         this.supplement=0;
     }
@@ -20,14 +21,14 @@ public class Seller extends Employee {
 
     public int getSupplement() {        //Gettet dodatku
         return supplement;
-    }
+    }       //Geter dodatku
 
     public int getCounterS() {       //Getter licznika obiektóe tego typu
         return counters;
-    }
+    }       //Getter licznika
 
     @Override
-    public int countSalary(){       //Publiczna funkcja obliczająca wypłatę sprzedawcy
+    public int countSalary(){       //Publiczna metoda obliczająca wypłatę sprzedawcy
          int result;
          result=this.getRate()+this.getHours()+this.supplement;
 

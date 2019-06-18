@@ -1,9 +1,10 @@
+//Główna klasa po której podklasy dziedziczą pola i metody
 public class Personel {
-    private String name;
-    private int office;
+    private String name;        //Zmienna typu ztring przechowyjąca nazwę pracownika
+    private int office;     //Prywatna zmienna typu int przechowująca numer biura pracownika
     static private int counter;     //Statyczny licznik wszystkich obiektów w bazie
 
-    Personel(){
+    Personel(){     //Konstruktor bezparametrowy
         this.name="Janusz";
         this.office=00;
     }
@@ -35,7 +36,7 @@ public class Personel {
         return counter;
     }
 
-    public String getNumber(){
+    public String getNumber(){      //Publiczna metoda zwracająca numer pracownika
         String number = "500 700 0";
         number+=String.valueOf(this.getOffice());
         return number;
