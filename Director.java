@@ -5,14 +5,14 @@ public class Director extends Personel {
  static  private int counterd;        //Statyczny licznik obiektów tego typu
 
     Director(){     //Konstruktor bezparametrowy
-        super();
+        super();        //Wywołanie konstruktora bezparametrowego nadklasy
         this.bonus=0;
         this.salary=0;
         this.counterd++;
     }
 
     Director(String name, int office, int salary, int bonus) {  //Konstruktor przeciążony
-        super(name, office);
+        super(name, office);        //Wywołanie konstruktora przeciążonego nadklasy
         this.salary = salary;
         this.bonus = bonus;
         this.counterd++;

@@ -5,12 +5,12 @@ public class Seller extends Employee {
 
 
     Seller(){   //Konstruktor bezparametrowy
-        super();
+        super();        //Wywoładnie konstruktora bezparametrowego nadklasy
         this.supplement=0;
     }
 
     Seller(String name, int office, int rate, int hours, int supplement) {      //Konstruktor przeciążony
-        super(name, office, rate, hours);
+        super(name, office, rate, hours);       //Wywoładnie przeciążonego konstruktora nadklasy
         this.supplement = supplement;
     }
 

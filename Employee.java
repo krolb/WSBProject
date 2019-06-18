@@ -4,13 +4,13 @@ public class Employee extends Personel {
     static private int countere;    //Statyczny licznik obiektów danego typu
 
     Employee(){     //Konstruktor bezparametrowy
-     super();
+     super();       //Wywoładnie konstruktora bezparametrowego nadklasy
      this.rate=0;
      this.hours=0;
     }
 
   Employee(String name, int office, int rate, int hours) {      //Konstruktor przeciążony
-        super(name, office);
+        super(name, office);        //Wywoładnie przeciążonego konstruktora nadklasy
         this.rate = rate;
         this.hours = hours;
         this.countere++;

@@ -24,4 +24,30 @@ Procaonik      Dyrektor
 Sprzedawca
 
 
+Składowe klas:
+-Personel:
++pola-name, office, counter
++setter-setName, setOffice
++getter-getName, getOffice, getCounter
++metody-getNumber
+
+-Procownik:
++pola-rate, hours, countere
++setter-setRate, setHours
++getter-getRate, getHours, getCounterE
++metody-countSalary
+
+-Dyrektor:
++pola- salary, bonus, sounteD
++setter-setSalary, setBonus
++getter-getSalary, getBonus
++metody-getCounterd, countSalary
+
+-Sprzedawca:
++pole- supplement, couters
++setter-setSupplement
++getter-get Supplement, getCounters
++motody-countSalary(przeciążona metoda)
+
+Klasa Personel posiada konstruktor jak i konstruktor bezparametrowy, pozostałe klasy posiadają swoje konstruktory które korzystają z bazowyc konstruktorów w klasie Personel i je przeciążają
 

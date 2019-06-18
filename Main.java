@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class Main {
-//@autor Bartosz Król
+//@author Bartosz Król
+    //@version 0,1
     // Program do zarządzania kadrą pracowniczą
     // Projekto do dr Wojciecha Gwizdały
     // Plik gówny main w którym będzie wykonwany słaściwy program korzystający z klas znajdujących się w innych plikach
