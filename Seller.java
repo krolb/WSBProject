@@ -1,7 +1,7 @@
+import java.util.Scanner;
 //Klasa Seller dziedzicząca po klasie Employee która dziedziczy po klasie Personel
 public class Seller extends Employee {
  private int supplement;     //Prywatna zmienna typu inr przechowyująca Dodatek
- static private int counters;    //Statyczna prywatna zmienna typu int przechowująca licznik obiektów tego typu
 
 
     Seller(){   //Konstruktor bezparametrowy
@@ -23,9 +23,6 @@ public class Seller extends Employee {
         return supplement;
     }       //Geter dodatku
 
-    public int getCounterS() {       //Getter licznika obiektóe tego typu
-        return counters;
-    }       //Getter licznika
 
     @Override
     public int countSalary(){       //Publiczna metoda obliczająca wypłatę sprzedawcy
@@ -34,4 +31,18 @@ public class Seller extends Employee {
 
          return result;
     }
+    @Override
+    public void addPerson(){        //Przyesłoniona metoda dodająca osobę z dodatkowymi danymi korzystająca z metody z nadklasy employee która bazuje na metodzie klasy personel
+        Scanner s= new Scanner(System.in);
+        super.addPerson();                                  //Wywołanie metody addperson z nadklasy
+        System.out.println("Podaj wartość dodatku: ");
+        this.setSupplement(s.nextInt());
+    }
+    @Override
+    public void info(){     //Przesłoniona metoad bazująca na metodzie z nadklasy i wyświetlająca dodatkowe dane z tej klasy
+        super.info();
+        System.out.printf("Dodatek: "+this.getSupplement()+"\t|");
+    }
+
+
 }
